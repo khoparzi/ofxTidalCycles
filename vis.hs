@@ -5,4 +5,6 @@ let rotx = pF "rotx"
     posx = pF "posx"
     posy = pF "posy"
     posz = pF "posz"
+    pos' = grp [mF "posx", mF "posy", mF "posz"]
+    pos x y z = posx x # posy y # posz z
     zoom = pF "zoom"
