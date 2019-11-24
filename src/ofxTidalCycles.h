@@ -8,6 +8,15 @@ public:
 	int instNum;
 	float cycle;
 	float cps;
+    float setcps;
+    float lfo;
+    float rotx;
+    float roty;
+    float rotz;
+    float posx = 0;
+    float posy = 0;
+    float posz = 0;
+    int zoom;
 	int startBar;
 	int bar;
 	float fract;

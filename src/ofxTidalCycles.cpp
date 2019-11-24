@@ -74,7 +74,46 @@ void ofxTidalCycles::update() {
 					float cps = m.getArgAsFloat(i + 1);
 					n.cps = cps;
 				}
-
+                if (m.getArgAsString(i) == "setcps") {
+                    float cps = m.getArgAsFloat(i + 1);
+                    n.cps = cps;
+                }
+                
+                if (m.getArgAsString(i) == "rotx") {
+                    float rotx = m.getArgAsFloat(i + 1);
+                    n.rotx = rotx;
+                }
+                if (m.getArgAsString(i) == "roty") {
+                    float roty = m.getArgAsFloat(i + 1);
+                    n.roty = roty;
+                }
+                if (m.getArgAsString(i) == "rotz") {
+                    float rotz = m.getArgAsFloat(i + 1);
+                    n.rotz = rotz;
+                }
+                
+                if (m.getArgAsString(i) == "posx") {
+                    float posx = m.getArgAsFloat(i + 1);
+                    n.posx = posx;
+                }
+                if (m.getArgAsString(i) == "posy") {
+                    float posy = m.getArgAsFloat(i + 1);
+                    n.posy = posy;
+                }
+                if (m.getArgAsString(i) == "posz") {
+                    float posz = m.getArgAsFloat(i + 1);
+                    n.posz = posz;
+                }
+                
+                if (m.getArgAsString(i) == "zoom") {
+                    int zoom = m.getArgAsInt(i + 1);
+                    n.zoom = zoom;
+                }
+                if (m.getArgAsString(i) == "lfo")
+                {
+                    float lfo = m.getArgAsFloat(i + 1);
+                    n.lfo = lfo;
+                }
 				
 				//erace unused inst
 				for (int i = 0; i < instNameBuffer.size(); i++) {
