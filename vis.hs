@@ -11,3 +11,7 @@ let rotx = pF "rotx"
     pos' = grp [mF "posx", mF "posy", mF "posz"]
     pos x y z = posx x # posy y # posz z
     dolly = pF "dolly"
+    sep = pF "sep"
+    fs = pF "fs"
+    is = pF "is"
+    vs = pF "vs"

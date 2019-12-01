@@ -74,10 +74,10 @@ void ofxTidalCycles::update() {
 					float cps = m.getArgAsFloat(i + 1);
 					n.cps = cps;
 				}
-                if (m.getArgAsString(i) == "orbit") {
-                    int orbit = m.getArgAsFloat(i + 1);
-                    n.orbit = orbit;
-                }
+								if (m.getArgAsString(i) == "orbit") {
+										int orbit = m.getArgAsFloat(i + 1);
+										n.orbit = orbit;
+								}
 				if (m.getArgAsString(i) == "setcps") {
 						float cps = m.getArgAsFloat(i + 1);
 						n.cps = cps;
@@ -118,11 +118,23 @@ void ofxTidalCycles::update() {
 						float lfo = m.getArgAsFloat(i + 1);
 						n.lfo = lfo;
 				}
-                if (m.getArgAsString(i) == "sep")
-                {
-                    float sep = m.getArgAsFloat(i + 1);
-                    n.sep = sep;
-                }
+				if (m.getArgAsString(i) == "sep")
+				{
+						float sep = m.getArgAsFloat(i + 1);
+						n.sep = sep;
+				}
+				if (m.getArgAsString(i) == "fs") {
+						int fs = m.getArgAsInt(i + 1);
+						n.fs = fs;
+				}
+				if (m.getArgAsString(i) == "is") {
+						int is = m.getArgAsInt(i + 1);
+						n.is = is;
+				}
+				if (m.getArgAsString(i) == "vs") {
+						int vs = m.getArgAsInt(i + 1);
+						n.vs = vs;
+				}
 
 				//erace unused inst
 				for (int i = 0; i < instNameBuffer.size(); i++) {
@@ -160,8 +172,8 @@ void ofxTidalCycles::drawNotes(float left, float top, float width, float height)
 			float x = ofMap(bar - notes[i].fract, -1, maxBar, width+left, left);
 			float y = ofMap(notes[i].instNum, 0, instNameBuffer.size(), top, height+top);
 			float h = height / instNameBuffer.size();
-            // float w = width / 128.0;
-            float w = width / 256.0;
+						// float w = width / 128.0;
+						float w = width / 256.0;
 			if (x > left) {
 				ofSetColor(155);
 				ofDrawRectangle(x, y, w, h);

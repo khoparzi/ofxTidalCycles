@@ -15,6 +15,9 @@ public:
     float posx = 0, posy = 0, posz = 0;
     int zoom = 0;
     float sep;
+    int fs = -1; // Select fragment shader
+    int is = -1; // Select image shader
+    int vs = -1; // Select video shader
 	int startBar;
 	int bar;
 	float fract;
@@ -36,7 +39,7 @@ public:
 	void beatShift();
 	void beatMonitor();
 	void calcStat();
-	
+
 	ofxOscReceiver receiver;
 	vector<TidalNote> notes;
 	vector<string> instNameBuffer;
@@ -59,4 +62,3 @@ public:
 	int noteNum[max1];
 	int bgAlpha[max1];
 };
-
