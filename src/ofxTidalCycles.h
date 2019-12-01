@@ -14,6 +14,7 @@ public:
     float rotx, roty, rotz;
     float posx = 0, posy = 0, posz = 0;
     int zoom = 0;
+    float sep;
 	int startBar;
 	int bar;
 	float fract;

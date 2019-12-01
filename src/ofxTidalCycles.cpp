@@ -118,6 +118,11 @@ void ofxTidalCycles::update() {
 						float lfo = m.getArgAsFloat(i + 1);
 						n.lfo = lfo;
 				}
+                if (m.getArgAsString(i) == "sep")
+                {
+                    float sep = m.getArgAsFloat(i + 1);
+                    n.sep = sep;
+                }
 
 				//erace unused inst
 				for (int i = 0; i < instNameBuffer.size(); i++) {
