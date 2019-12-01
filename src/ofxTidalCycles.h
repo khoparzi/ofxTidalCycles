@@ -6,17 +6,14 @@ class TidalNote {
 public:
 	string s;
 	int instNum;
+    int orbit;
 	float cycle;
 	float cps;
     float setcps;
     float lfo;
-    float rotx;
-    float roty;
-    float rotz;
-    float posx = 0;
-    float posy = 0;
-    float posz = 0;
-    int zoom;
+    float rotx, roty, rotz;
+    float posx = 0, posy = 0, posz = 0;
+    int zoom = 0;
 	int startBar;
 	int bar;
 	float fract;
