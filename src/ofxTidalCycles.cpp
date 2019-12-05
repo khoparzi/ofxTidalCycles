@@ -135,6 +135,10 @@ void ofxTidalCycles::update() {
 						int vs = m.getArgAsInt(i + 1);
 						n.vs = vs;
 				}
+                if (m.getArgAsString(i) == "saxis") {
+                    string saxis = m.getArgAsString(i + 1);
+                    n.saxis = saxis;
+                }
 
 				//erace unused inst
 				for (int i = 0; i < instNameBuffer.size(); i++) {
