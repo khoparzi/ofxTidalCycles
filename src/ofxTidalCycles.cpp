@@ -74,10 +74,10 @@ void ofxTidalCycles::update() {
 					float cps = m.getArgAsFloat(i + 1);
 					n.cps = cps;
 				}
-								if (m.getArgAsString(i) == "orbit") {
-										int orbit = m.getArgAsFloat(i + 1);
-										n.orbit = orbit;
-								}
+                if (m.getArgAsString(i) == "orbit") {
+                        int orbit = m.getArgAsFloat(i + 1);
+                        n.orbit = orbit;
+                }
 				if (m.getArgAsString(i) == "setcps") {
 						float cps = m.getArgAsFloat(i + 1);
 						n.cps = cps;
@@ -95,6 +95,19 @@ void ofxTidalCycles::update() {
 						float rotz = m.getArgAsFloat(i + 1);
 						n.rotz = rotz;
 				}
+                
+                if (m.getArgAsString(i) == "rotxa") {
+                    float rotxa = m.getArgAsFloat(i + 1);
+                    n.rotxa = rotxa;
+                }
+                if (m.getArgAsString(i) == "rotya") {
+                    float rotya = m.getArgAsFloat(i + 1);
+                    n.rotya = rotya;
+                }
+                if (m.getArgAsString(i) == "rotza") {
+                    float rotza = m.getArgAsFloat(i + 1);
+                    n.rotza = rotza;
+                }
 
 				if (m.getArgAsString(i) == "posx") {
 						float posx = m.getArgAsFloat(i + 1);

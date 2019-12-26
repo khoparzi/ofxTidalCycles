@@ -12,6 +12,7 @@ public:
     float setcps;
     float lfo;
     float rotx = 0, roty = 0, rotz = 0;
+    float rotxa = 0, rotya = 0, rotza = 0;
     float posx = 0, posy = 0, posz = 0;
     int zoom = 0;
     float sep;
