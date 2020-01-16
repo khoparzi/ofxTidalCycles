@@ -15,7 +15,7 @@ public:
     float rotxa = 0, rotya = 0, rotza = 0;
     float posx = 0, posy = 0, posz = 0;
     int zoom = 0;
-    float sep;
+    float sep = 0;
     int fs = -1; // Select fragment shader
     int is = -1; // Select image shader
     int vs = -1; // Select video shader
